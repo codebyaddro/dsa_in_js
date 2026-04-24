@@ -15,19 +15,19 @@
 // Stage : 2
 // let amount = Number(prompt("Enter the shopping amount to get discount."));
 
-let amount = "10000";
-amount = Number(amount);
-let discount = 0;
+// let amount = "10000";
+// amount = Number(amount);
+// let discount = 0;
 
-if (amount > 0 && amount <= 5000) {
-    discount = 0;
-} else if (amount > 5001 && amount <= 7000) {
-    discount = 0.05
-} else if (amount > 7001 && amount <= 9000) {
-    discount = 0.1
-} else if (amount > 9000) {
-    discount = 0.2
-}
+// if (amount > 0 && amount <= 5000) {
+//     discount = 0;
+// } else if (amount > 5000 && amount <= 7000) {
+//     discount = 0.05
+// } else if (amount > 7000 && amount <= 9000) {
+//     discount = 0.1
+// } else if (amount > 9000) {
+//     discount = 0.2
+// }
 
-let payable = Math.floor(amount - (amount * discount))
-console.log(`You need to pay $${payable}`);
+// let payable = Math.floor(amount - (amount * discount))
+// console.log(`You need to pay $${payable}`);
