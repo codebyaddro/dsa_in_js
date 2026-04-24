@@ -54,3 +54,62 @@
 
 // bill += unit * 4.2;
 // console.log(bill);
+
+// Stage : 4
+let netAmount = 1888;
+// 1000
+if (netAmount >= 1000) {
+    let noteCount = Math.floor(netAmount/1000);
+    netAmount = Math.floor(netAmount%1000);
+    console.log(`Total 1000 note count is ${noteCount} pieces`);
+}
+// 500
+if (netAmount >= 500) {
+    let noteCount = Math.floor(netAmount/500);
+    netAmount = Math.floor(netAmount%500);
+    console.log(`Total 500 note count is ${noteCount} pieces`);
+}
+// 200
+if (netAmount >= 200) {
+    let noteCount = Math.floor(netAmount/200);
+    netAmount = Math.floor(netAmount%200);
+    console.log(`Total 200 note count is ${noteCount} pieces`);
+}
+// 100
+if (netAmount >= 100) {
+    let noteCount = Math.floor(netAmount/100);
+    netAmount = Math.floor(netAmount%100);
+    console.log(`Total 100 note count is ${noteCount} pieces`);
+}
+// 50
+if (netAmount >= 50) {
+    let noteCount = Math.floor(netAmount/50);
+    netAmount = Math.floor(netAmount%50);
+    console.log(`Total 50 note count is ${noteCount} pieces`);
+}
+// 20
+if (netAmount >= 20) {
+    let noteCount = Math.floor(netAmount/20);
+    netAmount = Math.floor(netAmount%20);
+    console.log(`Total 20 note count is ${noteCount} pieces`);
+}
+if (netAmount >= 10) {
+    let noteCount = Math.floor(netAmount/10);
+    netAmount = Math.floor(netAmount%10);
+    console.log(`Total 10 note count is ${noteCount} pieces`);
+}
+if (netAmount >= 5) {
+    let noteCount = Math.floor(netAmount/5);
+    netAmount = Math.floor(netAmount%5);
+    console.log(`Total 5 note count is ${noteCount} pieces`);
+}
+if (netAmount >= 2) {
+    let noteCount = Math.floor(netAmount/2);
+    netAmount = Math.floor(netAmount%2);
+    console.log(`Total 2 note count is ${noteCount} pieces`);
+}
+if (netAmount >= 1) {
+    let noteCount = Math.floor(netAmount/1);
+    netAmount = Math.floor(netAmount%1);
+    console.log(`Total 1 note count is ${noteCount} pieces`);
+}
