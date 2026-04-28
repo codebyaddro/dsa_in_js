@@ -73,3 +73,17 @@
 // }
 
 // console.log(reversed);
+
+
+// let secretNumber = Math.floor(Math.random() * 10) + 1;
+// let guess = Number(prompt("Enter the number"));
+
+// while (guess != secretNumber) {
+//     if (guess > secretNumber) {
+//         console.log("Too high");
+//     } else {
+//         console.log("Too low");
+//     }
+//     guess = Number(prompt("Enter the number"));
+// }
+// console.log("You guessed the number");
