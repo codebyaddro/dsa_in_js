@@ -43,9 +43,36 @@ const n = Number(prompt("Enter the number = "));
 // }
 
 
-for (let i = 1; i <= n; i++) {
-    for (let j = 1; j <= i; j++) {
-        process.stdout.write("* ");
-    }
-    console.log();
-}
+// for (let i = 1; i <= n; i++) {
+//     for (let j = 1; j <= n - i; j++) {
+//         process.stdout.write("  ");
+//     }
+//     for (let j = 1; j <= i; j++) {
+//         process.stdout.write("* ");
+//     }
+//     console.log();
+// }
+
+
+// for (let i = 1; i <= n; i++) {
+//     for (let j = 1; j <= n; j++) {
+//         if (i == j || i + j == n + 1) {
+//             process.stdout.write("* ");
+//         } else {
+//             process.stdout.write("  ");
+//         }
+//     }
+//     console.log();
+// }
+
+
+// for (let i = 1; i <= n; i++) {
+//     for (let j = 1; j <= n; j++) {
+//         if (i == 1 || i == n || j == 1 || j == n) {
+//             process.stdout.write("* ");
+//         } else {
+//             process.stdout.write("  ");
+//         }
+//     }
+//     console.log();
+// }
