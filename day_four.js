@@ -1,5 +1,5 @@
 const prompt = require("prompt-sync")();
-const n = Number(prompt("Enter the number"));
+const n = Number(prompt("Enter the number = "));
 
 for (let i = 1; i <= n; i++) {
     for (let j = 1; j <= n; j++) {
