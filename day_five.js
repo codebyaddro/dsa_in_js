@@ -89,7 +89,18 @@
 // console.log(revArr);
 
 
-let arr = [10, 20, 30, 40, 50];
+// let arr = [10, 20, 30, 40, 50];
+// let i = 0, j = arr.length - 1;
+
+// while(i != j) {
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     i++;
+//     j--;
+// }
+
+// console.log(arr);
 
 
 // let arr = [10, 20, 30, 40, 50];
@@ -100,3 +111,19 @@ let arr = [10, 20, 30, 40, 50];
 // }
 
 // console.log(revArr);
+
+
+let arr = [1, 1, 0, 1, 0, 1, 1, 0, 0];
+let i = 0, j = 0;
+
+while(i < arr.length) {
+    if(arr[i] == 0) {
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        j++
+    }
+    i++;
+}
+
+console.log(arr);
