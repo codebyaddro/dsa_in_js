@@ -76,3 +76,57 @@
 // }
 
 // console.log(maxProfit([7,1,5,3,6,4]));
+
+
+
+// kadane's algo
+// function maxSubarraySum(arr) {
+//     let maxSum = 0;
+//     let currentSum = 0;
+//     for(let i = 0; i < arr.length; i++) {
+//         currentSum += arr[i];
+//         maxSum = Math.max(maxSum, currentSum);
+//         if(currentSum < 0) {
+//             currentSum = 0;
+//         }
+//     }
+//     return maxSum;
+// }
+
+// console.log(maxSubarraySum([-2,1,-3,4,-1,2,1,-5,4]));
+
+
+// Moore's Voting Algorithm
+// function majorityElement(nums) {
+//     let count = 0;
+//     let candidate = null;
+//     for(let i = 0; i < nums.length; i++) {
+//         if(count == 0) {
+//             candidate = nums[i];
+//         }
+//         if(nums[i] == candidate) {
+//             count++;
+//         } else {
+//             count--;
+//         }
+//     }
+//     return candidate;
+// }
+
+// console.log(majorityElement([2,2,1,1,1,2,2]));
+
+
+// Trapping rain water algo
+// function trap(height) {
+//     let leftMax = 0;
+//     let rightMax = 0;
+//     let water = 0;
+//     for(let i = 0; i < height.length; i++) {
+//         leftMax = Math.max(leftMax, height[i]);
+//         rightMax = Math.max(rightMax, height[height.length - 1 - i]);
+//         water += Math.min(leftMax, rightMax) - height[i];
+//     }
+//     return water;
+// }
+
+// console.log(trap([0,1,0,2,1,0,1,3,2,1,2,1]));
