@@ -42,8 +42,8 @@
 // fabonacci(10);
 
 // fibonacci of n'th term
-function fabo(n) {
-    if(n==0 || n==1) return n;
-    return fabo(n-1) + fabo(n-2);
-}
-console.log(fabo(6));
+// function fabo(n) {
+//     if(n==0 || n==1) return n;
+//     return fabo(n-1) + fabo(n-2);
+// }
+// console.log(fabo(6));
