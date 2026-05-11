@@ -1,18 +1,19 @@
-// binary search
-function binarySearch(arr, target) {
-    let start = 0;
-    let end = arr.length - 1;
-    while (start <= end) {
-        let mid = Math.floor((start + end) / 2);
-        if (arr[mid] === target) {
-            return mid;
-        } else if (arr[mid] < target) {
-            start = mid + 1;
-        } else {
-            end = mid - 1;
-        }
+let arr = [10, 20, 40, 38, 21, 44, 20, 12, 54, 66];
+
+arr.sort((a, b) => a - b);
+
+let index = binarySearch(arr, 0, arr.length - 1, 38);
+
+if(index == -1) console.log("Not Found");
+else console.log(index);
+console.log(arr);
+
+function binarySearch(arr, first, last, target) {
+    while(first <= last) {
+        let mid = Math.floor((first + last) / 2);
+        if(arr[mid] == target) return mid;
+        else if(arr[mid] > target) last = mid - 1;
+        else first = mid + 1;
     }
     return -1;
 }
-
-console.log(binarySearch([1, 2, 3, 4, 5], 3));
