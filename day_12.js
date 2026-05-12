@@ -1,3 +1,4 @@
+// Merge Sort
 function conquor(arr, f, m, l) {
     let temp = new Array(l - f + 1);
 

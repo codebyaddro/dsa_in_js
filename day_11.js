@@ -1,3 +1,4 @@
+// Binary Search
 let arr = [10, 20, 40, 38, 21, 44, 20, 12, 54, 66];
 
 arr.sort((a, b) => a - b);
